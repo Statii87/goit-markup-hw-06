@@ -15,6 +15,39 @@
   <body>
     <div class="modal is-hidden" data-modal>
       <div class="modal-inner">
+        <h3 class="inner-title">Leave your information and we'll call you back</h3>
+          <form>
+            <label class="form-label">
+              Name
+              <svg class="icon-form icon-person">
+                <use href="./images/svg/close-modal.svg#icon-person"></use>
+              </svg>
+              <input type="name" name="name" class="inner-contact"/>
+            </label>
+            <label class="form-label">
+              Phone
+              <svg class="icon-form icon-phone">
+                <use href="./images/svg/close-modal.svg#icon-phone"></use>
+              </svg>
+              <input type="phone" name="phone" class="inner-contact"/>
+            </label>
+            <label class="form-label">
+              Mail
+              <svg class="icon-form icon-email">
+                <use href="./images/svg/close-modal.svg#icon-email"></use>
+              </svg>
+              <input type="email" name="email" class="inner-contact"/>
+            </label>
+             <label class="form-label">
+              Comments
+              <textarea name="feedback"  placeholder="Enter the text" class="inner-comments"></textarea>
+            </label>
+            <label >
+              <input type="checkbox" name="hobby" unchecked class="terms-conditions" />
+              I agree with the letter and accept the <span class="terms-conditions-last">Terms and Conditions</span>
+            </label>
+            <button type="submit" class="send-button">Send</button>
+          </form>
         <div class="close-bg-modal" data-modal-close>
           <svg class="close-modal-icon">
             <use href="./images/svg/close-modal.svg#icon-close-modal"></use>

@@ -15,6 +15,7 @@ body {
   --description-color: #757575;
   --bg-color: #2f303a;
   --icon-color: #AFB1B8;
+  --most-color: #212121;
 }
 ul{
     list-style: none;
@@ -122,6 +123,7 @@ position: relative;
     background-image: url('../images/bgimg.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .hero-container{
   display: flex;
@@ -477,7 +479,8 @@ padding-bottom: 94px;
   border-radius: 4px;
   position: relative;
   animation-name: scale-modal;
-  animation-duration: 3s;
+  animation-duration: 250ms;
+ padding: 40px;
 }
 .close-modal-icon {
   width: 11px;
@@ -518,4 +521,98 @@ padding-bottom: 94px;
   100% {
     scale: 1;
   }
+}
+.inner-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--most-color);
+    margin-top: 0;
+}
+.form-label{
+    display: flex;
+    flex-direction: column;
+    color: var(--description-color);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+.icon-form{
+  position: absolute;
+  top: 46%;
+  left: 15px;
+}
+.icon-person{
+  height: 12px;
+  width: 12px;
+}
+.icon-phone{
+  height: 13px;
+  width: 13px;
+}
+.icon-email{
+  height: 12px;
+  width: 15px;
+}
+.inner-contact{
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.inner-contact:focus-within, .form-label:focus-within{
+  outline: none;
+  border-color: var(--highlight-color);
+  fill: var(--highlight-color);
+}
+.inner-comments{
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 16px 12px;
+}
+.inner-comments:focus-within{
+  outline: none;
+  border-color: var(--highlight-color);
+}
+.terms-conditions{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--description-color);
+    text-align: center;
+    margin: 0 12px;
+}
+.terms-conditions-last{
+    color: var(--highlight-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.send-button{
+    text-align: center;
+    margin: 30px 124px;
+    background-color: var(--highlight-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+.send-button:hover{
+  background-color: var(--highlight-hover-color);
 }
